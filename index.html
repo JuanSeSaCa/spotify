@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Reproductor</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <div class="player__controls">
+          <div class="player__btn player__btn--small">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <h5 class="player__title">Now playing</h5>
+          <div class="player__btn player__btn--small">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="player__album">
+          <img src="/storage/img/image 20.png" alt="Album Cover" class="player__img">
+        </div>
+        <div class="contain__title">
+          <i class='bx bx-plus'></i>
+          <div class="text__title">
+            <h3 class="player__artist">Money Machine</h3>
+            <h2 class="player__song">1000 Gecks</h2>
+          </div>
+            <i class='bx bx-heart' ></i>
+        </div>
+
+        <input type="range" value="20" min="0" class="player__level">
+
+        <div class="audio-duration">
+          <div class="start">2:14</div>
+          <div class="end">-1:15</div>
+        </div>
+
+        <audio class="player__audio" controls id="audio">
+          <source src="" type="audio/mpeg" > 
+        </audio>
+
+        <div class="player__controls">
+
+          <div class="player__btn__gray player__btn--mediumGray">
+            <i class='bx bx-shuffle'></i>
+          </div>
+
+
+          <div class="player__btn player__btn--medium">
+            <i class='bx bx-rewind' ></i>
+          </div>
+
+          <div class="player__btn player__btn--medium blue" id="play">
+            <i class="bx bx-play play-btn"></i>
+            <i class="bx bx-pause pause-btn hide"></i>
+          </div>
+
+
+          
+          <div class="player__btn__gray player__btn--medium">
+            <i class='bx bx-fast-forward'></i>
+          </div>
+
+          <div class="player__btn__gray player__btn--mediumGray">
+            <i class='bx bx-repeat'></i>
+          </div>
+
+
+         
+        </div>
+
+        <div class="volume__controls">
+
+          <div class="volumen__btn player__btn--mediumGray">
+            <i class='bx bxs-volume-low' ></i>
+          </div>
+
+          
+          <input type="range" value="20" min="0" class="volume">
+
+          <div class="player__btn player__btn--mediumGray">
+            <i class='bx bxs-volume-full' ></i>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="user__contain">
+
+          <div class="player__btn player__btn--medium">
+            <i class='bx bx-headphone'></i>
+          </div>
+          <h4>Airpods Pro (Dave)</h4>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
