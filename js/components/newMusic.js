@@ -1,6 +1,6 @@
 import { LitElement, html, css } from "lit"
-import { sortSongsForPopularity } from "../modules/"
-import { releaseYear } from "../modules/musicData"
+import { sortSongsForPopularity } from "../modules/musicData.js"
+import { releaseYear } from "../modules/musicData.js"
 
 export class newMusic extends LitElement {
     static properties = {
